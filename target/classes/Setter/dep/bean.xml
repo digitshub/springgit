@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="obj" class="org.example.address" >
+        <property name="block_no" value="4567" >
+
+        </property>
+        <property name="road" value="fhhdeu" >
+
+        </property>
+    </bean>
+    <bean id="student" class="org.example.student" >
+        <property name="studentid" value="567">
+
+        </property>
+        <property name="studentName" value="shraddha">
+
+        </property>
+    <property name="address" ref="obj">
+
+    </property>
+
+    </bean>
+
+
+</beans>
