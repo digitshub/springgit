@@ -11,5 +11,5 @@ public class App {
         ApplicationContext context= new ClassPathXmlApplicationContext("autowire.xml");
         Emp emp=context.getBean("emp2", Emp.class);         
         System.out.println(emp);
-    }
+    }}
 
